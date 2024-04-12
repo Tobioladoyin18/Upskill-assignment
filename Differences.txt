@@ -1,0 +1,284 @@
+         
+
+              DIFFERENCE BETWEEN NORMAL HTML AND SEMANTIC HTML
+
+
+Semantic HTML, also known as semantic markup, refers to the use of HTML tags that convey the meaning—or semantics—of the content contained within them.
+
+By adding semantic HTML tags to your pages, you provide additional information that helps define the roles and relative importance of the different parts of your page.
+
+(As opposed to non-semantic HTML, which uses tags that don’t directly convey meaning.)
+
+while HTML (HyperText Markup Language) is the code that is used to structure a web page and its content. For example, content could be structured within a set of paragraphs, a list of bulleted points, or using images and data tables. As the title suggests, this article will give you a basic understanding of HTML and its functions.
+
+So what is HTML?
+HTML is a markup language that defines the structure of your content. HTML consists of a series of elements, which you use to enclose, or wrap, different parts of the content to make it appear a certain way, or act a certain way. The enclosing tags can make a word or image hyperlink to somewhere else, can italicize words, can make the font bigger or smaller, and so on.
+
+
+             DIFFERENCE BETWEEN CLOSING TAGS AND SELF CLOSING TAGS
+
+
+
+
+
+A traditional HTML tag such as <p>, <div>, <section>, etc., had an opening tag and a closing tag. However, due to their fundamental structure, void components in HTML, such as images and links, do not technically require closing tags. Images and links cannot have content - they are pointers to an element installed on the website.
+Instead of including independent opening and closing tags in more modern HTML variants such as XHTML, developers employ a self-closing tag that includes a "/" within the carets (\<>). For example – <img src="image/circle" alt="example" />
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Self-closing tags</title>
+</head>
+ <body>
+	<img src="https://cdn.pixabay.com/photo/2021/09/15/11/44/insect-6626635__340.jpg" alt="insect-bee"/>
+  </body>
+</html>
+
+Output Output_selfclosingtags
+
+while
+
+A self-closing tag in HTML is a kind of HTML tag that does not need to be closed manually by its closing tag, which means it does not have a separate closing tag as </tag>. Some few self-closing tags are <input/>, <hr/>, <br/>, <img/>, etc.
+Self-closing tags in HTML are sometimes also known as empty tags, void tags, singletons tags, etc. This means that these tags have no content and cannot have any children.
+while Tags usually travel in pairs. An opening tag begins a section of page content, and a closing tag ends it. For example, to markup a section of text as a paragraph, you would open the paragraph with an opening paragraph tag <p> and close it with a closing paragraph tag </p> (closing tags always proceed the element with a /).
+
+
+
+               DIFFERENCE BETWEEN Block Elements AND INLINE ELEMENTS
+
+
+
+
+The inline and block elements of HTML are one of the important areas where web developers often get confused because they were unable to know which are inline and block elements which may cause clumsiness in a webpage in case he assumes some element to be a block but it is an inline element which causes next element comes next to it.
+
+So let us see the differences between the inline and block elements in HTML and the different frequently used inline and block HTML elements. 
+
+Block elements: They consume the entire width available irrespective of their sufficiency. They always start in a new line and have top and bottom margins. It does not contain any other elements next to it.
+
+Examples of Block elements:
+
+<h1>-<h6> : This element is used for including headings of different sizes ranging from 1 to 6.
+<div>: This is a container tag and is used to make separate divisions of content on the web page.
+<hr>: This is an empty tag and is used for separating content by horizontal lines.
+<li>: This tag is used for including list items of an ordered or unordered list.
+<ul>: This tag is used to make an unordered list.
+<ol>: This tag is used to make an ordered list.
+<p>: This tag is used to include paragraphs of content in the webpage.
+<table>: This tag is used for including the tables in the webpage when there is a need for tabular data.
+  
+ 
+
+HTML 5 Semantic block elements:
+
+<header>: This tag is used for including all the main things of the webpage like navbar, logos, and heading of the webpage.
+<nav>: This tag helps to navigate through different sections by including different blocks of hyperlinks in the webpage.
+<footer>:  This contains all information about the authorization, contact, and copyright details of the webpage.
+<main>: The main content of the webpage resides in this tag.
+<section> : This is used separate different sections in the webpage.
+<article>: This tag is used to include different independent articles on the webpage.
+<aside>: This tag is used to mention details of the main content aside.
+Example: 
+
+<!DOCTYPE html>
+
+<html lang="en">
+ 
+
+<head>
+
+    <!--Meta data-->
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible"
+
+          content="IE=edge">
+
+    <meta name="viewport"
+
+          content="width=device-width, initial-scale=1.0">
+ 
+
+    <!--The description written on title tag 
+
+        get appeared as browser tab name-->
+
+    <title>Geeks For Geeks </title>
+ 
+
+    <style>
+
+        h1 {
+
+            color: #006600;
+
+            text-align: center;
+
+            border: 2px solid #091418;
+
+            background-color: yellow;
+
+        }
+
+        .container {
+
+            border: 2px solid #040804;
+
+            background-color: slategray;
+
+        }
+
+        p{
+
+            border: 2px solid #040804;
+
+            background-color:  #4089c5;
+
+        }
+
+    </style>
+
+</head>
+
+   
+<!-- Whatever content in the body tag 
+
+     appears on the webpage -->
+ 
+
+<body>
+
+    <div class="container" >
+
+        <h1>Geeks for Geeks(h1) </h1>
+
+         
+
+<p>
+
+             This is a paragraph example of block 
+
+             element which occupied whole width (p)
+
+        </p>
+ 
+
+    </div>
+
+</body>
+ 
+
+</html>
+Output: From the above output, 3 different block elements with different background colour and a border are used to show how the block elements occupy the whole width and the margin they leave. Three-block elements <h1>,<p>,<div> are used in the above output.
+
+
+
+
+Inline elements: Inline elements occupy only enough width that is sufficient to it and allows other elements next to it which are inline. Inline elements don’t start from a new line and don’t have top and bottom margins as block elements have.
+
+Examples of Inline elements:
+
+<a>: This tag is used for including hyperlinks in the webpage.
+<br>: This tag is used for mentioning line breaks in the webpage wherever needed.
+<script> : This tag is used for including external and internal JavaScript codes.
+<input>: This tag is used for taking input from the users and is mainly used in forms.
+<img>: This tag is used for including different images in the webpage to add beauty to the webpage.
+<span>:  This is an inline container that takes necessary space only.
+<b>:  This tag is used in places where bold text is needed.
+<label>: The tag in HTML is used to provide a usability improvement for mouse users i.e, if a user clicks on the text within the <label> element, it toggles the control.
+Example: 
+
+<!DOCTYPE html>
+
+<html lang="en">
+ 
+
+<head>
+
+    <!--Meta data-->
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content=
+
+        "width=device-width, initial-scale=1.0">
+ 
+
+    <style>
+
+        h1 {
+
+            color: #006600;
+
+            text-align: center;
+
+        }
+ 
+
+        span {
+
+            border: 2px solid #040804;
+
+            background-color: #4089c5;
+
+        }
+ 
+
+        a {
+
+            border: 2px solid #040804;
+
+        }
+
+    </style>
+
+</head>
+ 
+<!-- Whatever content in body tag 
+
+    appears on the webpage-->
+
+<body>
+
+    <div class="container">
+
+        <h1>Geeks for Geeks</h1>
+
+         
+
+<p>
+
+            This is a <span>span element </span>
+
+            <span>and </span><b>this</b> is a
+
+            <a href="#">link</a> which are examples
+
+            of inline elements which occupy only
+
+            sufficient width.
+
+        </p>
+ 
+
+    </div>
+
+</body>
+ 
+
+</html>
+Output:
+
+
+
+
+From the above output, three different inline elements are used is <span>, <b>,<a> that occupied only enough width and allowed other elements to settle at their next.
+
+Difference between Inline and Block elements:
+
+Inline Elements 	Block Elements 
+Inline elements occupy only sufficient width required.	 Block Elements occupy the full width irrespective of their sufficiency.
+Inline elements don’t start in a new line.	Block elements always start in a line.
+Inline elements allow other inline elements to sit behind.	Block elements doesn’t allow other elements to sit behind
+Inline elements don’t have top and bottom margin 	Block elements have top and bottom margin.
